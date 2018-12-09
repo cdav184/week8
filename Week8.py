@@ -3,6 +3,7 @@
 #Enter in the DnaSeq in all caps.
 complement = []
 dnaSeq = input ("Enter dnaSeq here in all caps: ")
+dnaSeq = dnaSeq.upper()
 
 dnaSeq = dnaSeq[::-1]
 print (dnaSeq)
@@ -19,3 +20,6 @@ for i  in dnaSeq:
 
 str2 = ''.join(complement)
 print (str2) 
+
+# DB: Good! If you want to avoid the requirement for the user to use all caps, you could
+#     add .upper() after you read in the sequence (see above).
